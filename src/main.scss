@@ -1,0 +1,18 @@
+*, ::before, ::after {
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+
+ol { list-style-position: inside; }
+
+label { user-select: none; }
+
+input[type="text"], textarea, button {
+    padding: 2px 4px;
+}
+
+body {
+    padding: 16px;
+    > #root {
+        display: flex; flex-direction: column; gap: 16px;
+    }
+}

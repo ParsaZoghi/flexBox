@@ -1,0 +1,8 @@
+#form {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 4px;
+    > #task-input {
+        flex-grow: 1;
+        padding: 2px 4px;
+    }
+}
+

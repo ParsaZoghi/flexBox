@@ -1,0 +1,6 @@
+#list-action-container {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 4px;
+    > #check-all-container {
+        display: flex; align-items: center; gap: 4px;
+    }
+}

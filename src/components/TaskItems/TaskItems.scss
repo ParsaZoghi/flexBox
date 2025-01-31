@@ -1,0 +1,29 @@
+@import '../../assets/scss/variables';
+
+#list {
+    display: flex; flex-direction: column; gap: 8px;
+    width: fit-content;
+    > li {
+        width: fit-content; max-width: 100%;
+        padding: 4px;
+        border-bottom: 1px solid $gray;
+        > div {
+            display: inline-flex; flex-wrap: wrap; align-items: flex-start; gap: 4px 8px;
+            max-width: 100%;
+            > textarea {
+                flex-grow: 1;
+                min-width: 100px; max-width: 100%;
+            }
+            > .item-action-container {
+                display: flex; align-items: stretch; gap: 4px;
+            }
+        }
+        &[data-check="checked"] {
+            background-color: $gray;
+            > div > textarea {
+                text-decoration: line-through;
+                &:hover { text-decoration: none; }
+            }
+        }
+    }
+}
